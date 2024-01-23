@@ -1,0 +1,86 @@
+.support {
+	display: flex;
+	gap: 2.8rem;
+
+	@media only screen and (max-width: 43.75em) {
+		flex-direction: column;
+		gap: 7rem;
+	}
+
+	// ============= Rating Part of Support Section ===============
+	&__heading {
+		width: 95%;
+	}
+
+	&__para {
+		margin-top: 3rem;
+		margin-bottom: 7rem;
+
+		@media only screen and (max-width: 43.75em) {
+			margin-bottom: 3rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			text-align: justify;
+		}
+	}
+
+	&__rating-boxes {
+		display: flex;
+		gap: 8rem;
+
+		@media only screen and (max-width: $bp-smallest) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 4rem;
+		}
+	}
+
+	&__rating-box {
+		display: flex;
+		flex-direction: column;
+		gap: 1.8rem;
+	}
+
+	&__stars {
+		width: 14.2rem;
+	}
+
+	// =============== Points Part of Support Section ================
+	&__points-part {
+		display: flex;
+		flex-direction: column;
+		gap: 3.3rem;
+	}
+
+	&__point-box {
+		display: flex;
+		gap: 2rem;
+		align-items: flex-start;
+	}
+
+	&__icon-box {
+		padding: 1.5rem;
+		background-color: $color-white;
+		box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
+
+        @media only screen and (max-width: $bp-smallest) {
+			padding: 1rem;
+		}
+	}
+
+	&__icon {
+		height: 3rem;
+		width: 3rem;
+
+		@media only screen and (max-width: $bp-smallest) {
+			height: 2rem;
+			width: 2rem;
+		}
+	}
+
+	&__point-para {
+		margin-top: 1rem;
+	}
+}

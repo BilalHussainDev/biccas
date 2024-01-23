@@ -1,0 +1,102 @@
+.end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 7rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: max-content 1fr;
+        gap: 8vw;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: none;
+        gap: 8vw;
+    }
+
+    // ============= Input Part ==========
+    &__input-part {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    &__heading {
+        color: $color-primary;
+    }
+
+    &__para {
+        color: $color-grey;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 70%;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 100%;
+        }
+    }
+
+    &__input {
+        padding: 1.8rem 2rem;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        border: 1px solid $color-white;
+        border-radius: 7rem;
+        width: 100%;
+        margin-right: -5rem;
+        font-size: 1.8rem;
+    }
+
+    &__btn {
+        // position: absolute;
+        width: 4rem;
+        height: 4rem;
+        padding: 1.1rem;
+        border: none;
+        border-radius: 50%;
+        background-color: $color-primary;
+    }
+
+    // ================== Lists Part ===============
+    &__list-part {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-largest) {
+            gap: 4rem;
+            justify-content: right;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: space-around;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+            text-align: left;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-heading {
+        margin-bottom: 3rem;
+        color: $color-white;
+    }
+
+    &__list-item {
+        color: $color-grey;
+        margin-bottom: 2rem;
+    }
+}

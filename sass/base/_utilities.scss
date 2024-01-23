@@ -1,0 +1,39 @@
+// ======= Margins ======
+.u-mb-large {
+	margin-bottom: 13rem !important;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 8rem !important;
+    }
+}
+
+// ========= Image =============
+.image {
+	width: 100%;
+	display: block;
+}
+
+// ============ Button ============
+.btn {
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: $color-white;
+		background-color: $color-primary;
+		transition: all 0.2s;
+	}
+
+	&:hover {
+		// transform: translateY(-0.3rem);
+		margin-top: -3px;
+		margin-bottom: 3px;
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	}
+
+	&:active {
+		transform: translateY(-0.1rem);
+		margin-top: -1px;
+		margin-bottom: 1px;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	}
+}

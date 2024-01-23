@@ -1,0 +1,25 @@
+.header {
+	padding: 4rem 9vw 9vw 9vw;
+
+	&::before,
+	&::after {
+		content: "";
+        z-index: -1;
+		position: absolute;
+		width: 63.4rem;
+		height: 63.4rem;
+		border-radius: 50%;
+		filter: blur(300px);
+		background-image: radial-gradient(circle, #52BDAA 0%, #ffffff 100%);
+	}
+
+	&::before {
+		top: -31.7rem;
+		left: -30rem;
+	}
+
+	&::after {
+		top: 70%;
+		right: 0;
+	}
+}

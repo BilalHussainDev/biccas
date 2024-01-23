@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	// outline: 1px solid yellow;
+}
+
+html {
+	box-sizing: border-box;
+	// This defines what 1 rem is
+	font-size: 62.5%; // now 1 rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 3rem;
+	color: $color-grey;
+}
+
+.container-large {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}

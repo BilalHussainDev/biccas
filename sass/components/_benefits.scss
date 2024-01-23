@@ -1,0 +1,44 @@
+.benefits {
+	&__heading {
+		width: 85%;
+	}
+
+	&__list {
+		list-style: none;
+		color: $color-black-2;
+	}
+
+	&__list-item {
+		display: grid;
+        grid-template-columns: max-content 1fr;
+		gap: 2rem;
+		margin-bottom: 3.2rem;
+		text-align: left;
+        
+        @media only screen and (max-width: $bp-smallest) {
+			align-items: center;
+            gap: 1rem;
+		}
+	}
+
+	&__list-icon {
+		height: 3.2rem;
+		width: 3.2rem;
+
+		@media only screen and (max-width: $bp-smallest) {
+			height: 2rem;
+			width: 2rem;
+		}
+	}
+
+	&__left-bottom {
+		width: 30.2rem;
+		position: absolute;
+		top: 88%;
+		left: 0;
+
+		@media only screen and (max-width: $bp-small) {
+			width: 20rem;
+		}
+	}
+}
